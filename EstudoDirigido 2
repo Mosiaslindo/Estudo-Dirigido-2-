@@ -1,0 +1,686 @@
+<?php
+
+//Exercicio1
+
+print "Digite o primeiro número: "
+$n1 = fgets(STDIN);
+print "Digite o segundo número: ";
+$n2 = fgets(STDIN);
+if ($n1 > $n2) {
+    print "O primeiro número é maior: $n1 \n";
+}elseif ($n1 == $n2){
+    print "Os dois números são iguais \n";
+}else{
+    print "O segundo número é maior: $n2 \n";
+}
+
+//Exercicio2
+
+print "Digite um valor numérico: ";
+$Valor = fgets(STDIN);
+if ($Valor > 0) {
+    print "O Valor é positivo. \n";
+}elseif ($Valor == 0){
+    print "O Valor é nulo. \n";
+}else{
+    print "O valor é negativo. \n";
+}for ($o = 0; $o < 8; $o++) {
+412
+    for ($u = 8; $u > $o; $u--){
+413
+        print "* ";
+414for ($o = 0; $o < 8; $o++) {
+412
+    for ($u = 8; $u > $o; $u--){
+413
+        print "* ";
+414
+    }
+415
+    print "\n";
+416
+}
+417
+print "\n";
+418
+for ($a = 0; $a < 8; $a++) { 
+419
+    print "* * * * * * * * \n";
+420
+}
+421
+print "\n";
+422
+for ($e = 0; $e < 8; $e++) {
+423
+    for ($i = -1; $i < $e; $i++) {
+424
+       print "* ";
+425
+    }
+426
+    print "\n";
+427
+}
+428
+//////////////////////////////////////////////////
+429
+print "\n";
+430
+for ($e = 0; $e < 8; $e++) {
+431
+  
+432
+  for ($k=1; $k < 8 - $e; $k++) { 
+433
+    print("  ");
+434
+  }
+435
+    for ($i = -1; $i < $e; $i++) {
+436
+       print "* ";
+437
+    }
+438
+    print "\n";
+439
+}
+440
+​
+441
+
+    }
+415
+    print "\n";
+416
+}
+417
+print "\n";
+418
+for ($a = 0; $a < 8; $a++) { 
+419
+    print "* * * * * * * * \n";
+420
+}
+421
+print "\n";
+422
+for ($e = 0; $e < 8; $e++) {
+423
+    for ($i = -1; $i < $e; $i++) {
+424
+       print "* ";
+425
+    }
+426
+    print "\n";
+427
+}
+428
+//////////////////////////////////////////////////for ($o = 0; $o < 8; $o++) {
+412
+    for ($u = 8; $u > $o; $u--){
+413
+        print "* ";
+414
+    }
+415
+    print "\n";
+416
+}
+417
+print "\n";
+418
+for ($a = 0; $a < 8; $a++) { 
+419
+    print "* * * * * * * * \n";
+420
+}
+421
+print "\n";
+422
+for ($e = 0; $e < 8; $e++) {
+423
+    for ($i = -1; $i < $e; $i++) {
+424
+       print "* ";
+425
+    }
+426
+    print "\n";
+427
+}
+428
+//////////////////////////////////////////////////
+429
+print "\n";
+430
+for ($e = 0; $e < 8; $e++) {
+431
+  
+432
+  for ($k=1; $k < 8 - $e; $k++) { 
+433
+    print("  ");
+434
+  }
+435
+    for ($i = -1; $i < $e; $i++) {
+436
+       print "* ";
+437
+    }
+438
+    print "\n";
+439
+}
+440
+​
+441
+
+429
+print "\n";
+430
+for ($e = 0; $e < 8; $e++) {
+431
+  
+432
+  for ($k=1; $k < 8 - $e; $k++) { 
+433
+    print("  ");
+434
+  }
+435
+    for ($i = -1; $i < $e; $i++) {
+436
+       print "* ";
+437
+    }
+438
+    print "\n";
+439
+}
+440
+​
+441
+
+
+//Exercicio3
+
+print "Insira o seu sexo [F/M]: ";
+$Sexo = fgetc(STDIN);
+if ($Sexo == "F" or $Sexo == "f") {
+	print "Sexo feminino validado";
+}
+elseif ($Sexo == "M" or $Sexo == "m") {
+	print "Sexo masculino validado";
+}
+else {
+	print "Sexo inválido";
+}
+
+//Exercicio4 
+
+print "Digite uma letra: ";
+$Letra = fgetc(STDIN);
+if ($Letra == "a" or $Letra == "e" or $Letra == "i" or $Letra == "o"  or $Letra == "u" or $Letra == "A" or $Letra == "E" or $Letra == "I" or $Letra == "O" or $Letra == "U") {
+    print "$Letra é uma vogal \n";
+}else{
+    print "$Letra é uma consoante \n";
+}
+
+//Exercicio5 
+
+print "Digite a primeira nota: ";
+$n1 = (float)fgets(STDIN);
+print "Digite a segunda nota: ";
+$n2 = (float)fgets(STDIN);
+    $Media = ($n1 + $n2)/2;
+if ($Media == 10){
+    print "Aprovado com Distinção \n";
+}elseif ($Media >= 7){
+    print "Aprovado \n";
+}else{
+    print "Reprovado \n";
+}
+
+//Exercicio 6 
+print "Digite o primeiro número: ";
+$primeiro = (float)fgets(STDIN);
+print "Digite o segundo número: ";
+$segundo = (float)fgets(STDIN);
+print "Digite o terceiro número: ";
+$terceiro = (float)fgets(STDIN);
+if ($primeiro > $segundo and $primeiro > $terceiro) {
+    print "O primeiro número é o maior\n";
+}
+elseif ($segundo > $primeiro and $segundo > $terceiro) {
+    print "O segundo númeor é o maior\n";
+}
+elseif ($terceiro > $primeiro and $terceiro > $segundo) {
+    print "O terceiro número é o maior\n";
+}
+elseif ($primeiro == $segundo and $primeiro == $terceiro) {
+    print "Todos os números são iguais \n";
+}
+
+//Exercicio7 
+
+print "Digite o primeiro número: ";
+$primeiro = fgets(STDIN);
+print "Digite o segundo número: ";
+$segundo = fgets(STDIN);
+print "Digite o terceiro número: ";
+$terceiro = fgets(STDIN);
+if ($primeiro > $segundo and $primeiro > $terceiro) {
+    print "O primeiro número é o maior \n";
+}elseif ($segundo > $primeiro and $segundo > $terceiro) {
+    print "O segundo número é o maior \n";
+}elseif ($terceiro > $primeiro and $terceiro > $segundo) {
+    print "O terceiro número é o maior \n";
+}elseif ($primeiro == $segundo and $primeiro == $terceiro) {
+    print "Todos os números são iguais \n";
+}
+if ($primeiro < $segundo and $primeiro < $terceiro) {
+    print "O primeiro número é o menor \n";
+}elseif ($segundo < $primeiro and $segundo < $terceiro) {
+    print "O segundo número é o menor \n";
+}elseif ($terceiro < $primeiro and $terceiro < $segundo) {
+    print "O terceiro número é o menor \n";
+}
+if ($primeiro == $segundo and $primeiro != $terceiro) {
+    print "O primeiro e o segundo números são iguais \n";
+}elseif ($primeiro == $terceiro and $primeiro != $segundo) {
+    print "O primeiro e o terceiro números são iguais \n";
+}elseif ($segundo == $terceiro and $segundo != $primeiro) {
+    print "O segundo e o terceiro números são iguais \n";
+}
+
+//Exercicio 8 
+
+print "Digite o primeiro preço: ";
+$preco1 = fgets (STDIN);
+print "Digite o segundo preço: ";
+$preco2 = fgets (STDIN);
+print "Digite o terceiro preço: ";
+$preco3 = fgets (STDIN);
+if ($preco1 < $preco2 and $preco1 < $preco3) {
+    print "Você deveria comprar o primeiro produto \n";
+}elseif ($preco2 < $preco3 and $preco2 < $preco1) {
+    print "Você deveria comprar o segundo produto \n";
+}elseif ($preco3 < $preco2 and $preco3 < $preco1) {
+    print "Você deveria comprar o terceiro produto \n";
+}elseif ($preco1 == $preco2 and $preco1 < $preco3 ) {
+    print "Você deveria comprar o primeiro ou segundo produto \n";
+}elseif ($preco3 == $preco2 and $preco3 < $preco1 ) {
+    print "Você deveria comprar o segundo ou terceiro produto \n";
+}elseif ($preco1 == $preco3 and $preco1 < $preco2) {
+    print "Você deveria comprar o primeiro ou terceiro produto \n";
+}elseif ($preco1 == $preco2 and $preco1 == $preco3) {
+    print "Os três produtos tem o mesmo preço, a escolha é dada pelo usuário \n";
+}
+
+//Exercicio 9 
+
+print "Digite o primeiro número (não repita números): ";
+$primeiro = fgets(STDIN);
+print "Digite o segundo número (não repita números): ";
+$segundo = fgets(STDIN);
+print "Digite o terceiro número (não repita números): ";
+$terceiro = fgets(STDIN);
+if ($primeiro > $segundo and $segundo > $terceiro) {
+    print "$primeiro \n" . "$segundo \n" . "$terceiro \n";
+}elseif ($primeiro > $terceiro and $terceiro > $segundo) {
+    print "$primeiro \n" . "$terceiro \n" . "$segundo \n";
+}elseif ($segundo > $primeiro and $primeiro > $terceiro) {
+    print "$segundo \n" . "$primeiro \n" . "$terceiro \n";
+}elseif ($segundo > $terceiro and $terceiro > $primeiro) {
+    print "$segundo \n" . "$terceiro \n" . "$primeiro \n";
+}elseif ($terceiro > $primeiro and $primeiro > $segundo) {
+    print "$terceiro \n" . "$primeiro \n" . "$segundo \n";
+}elseif ($terceiro > $segundo and $segundo > $primeiro) {
+    print "$terceiro \n" . "$segundo \n" . "$primeiro \n";
+}
+
+//Exercicio 10
+print "Insira o valor de A: ";
+$a = fgets(STDIN);
+if ($a == 0) {
+    print "A variavel A não pode ser validado como 0 \n";
+    exit;
+}
+print "Insira o valor de B: ";
+$b = fgets(STDIN);
+print "Insira o valor de C: ";
+$c = fgets(STDIN);
+    $Delta = (pow($b,2))-(4*$a*$c);
+if ($Delta < 0) {
+    print "Delta negativo: não possui raizes reais";
+    exit;
+}
+elseif ($Delta == 0) {
+        $X = -$b/2*$a;
+    print "O valor de A é: $a";
+    print "O valor de B é: $b";
+    print "O valor de C é: $c";
+    print "O valor de Δ é: $Delta \n";
+    print "O valor de x é: $X \n";
+}
+elseif ($Delta > 0) {
+        $X1 = (-$b-sqrt($Delta))/2*$a;
+        $X2 = (-$b+sqrt($Delta))/2*$a;
+    print "O valor de A é: $a";
+    print "O valor de B é: $b";
+    print "O valor de C é: $c";
+    print "O valor de Δ é: $Delta \n";
+    print "O valor de x1 é: $X1 \n";
+    print "O valor de x2 é: $X2 \n";    
+}
+
+//Exercicio 11
+
+print "Digite um número inteiro menor que 1000: ";
+$Numero = (int) fgets(STDIN);
+if ($Numero >= 1000 or $Numero < 0) {
+    print "Número inválido.";
+    exit;
+}
+    $Numero_Reserva = $Numero;
+    $Centena = 0;
+    $Dezena = 0;
+    $Unidade = 0;
+while ($Numero_Reserva >= 100) {
+    $Numero_Reserva = $Numero_Reserva - 100;
+    $Centena++;
+}
+while ($Numero_Reserva >= 10) {
+    $Numero_Reserva = $Numero_Reserva -10;
+    $Dezena++;
+}
+while ($Numero_Reserva >= 1) {
+    $Numero_Reserva = $Numero_Reserva -1;
+    $Unidade++;
+}
+if ($Numero > 100) {
+    print "$Numero ". '= ' ."$Centena centena(s), $Dezena dezena(s) e $Unidade unidade(s).";
+}
+elseif ($Numero > 10) {
+    print "$Numero ". '= ' ."$Dezena dezena(s) e $Unidade unidade(s).";
+}
+elseif ($Numero > 1) {
+    print "$Numero ". '= ' ."$Unidade unidade(s).";
+}
+
+//Exercicio 12
+
+for ($i=1; $i < 101; $i++) { 
+    print "$i \n";
+}
+
+//Exercicio 13
+
+for ($i=100; $i > 0; $i--) { 
+    print "$i \n";
+}
+
+//Exercicio 14 
+
+    $Contador = 1;
+while ($Contador <= 50) {
+    print "$Contador \n";
+        $Contador = $Contador+2;
+}
+
+//Exercicio 15
+
+print "ATENÇÃO: NÃO REPITA NÚMEROS \n\n";
+print "Digite o primeiro número: ";
+$primeiro = fgets(STDIN);
+print "Digite o segundo número: ";
+$segundo = fgets(STDIN);
+print "Digite o terceiro número: ";
+$terceiro = fgets(STDIN);
+print "Digite o quarto número: ";	
+$quarto = fgets(STDIN);
+print "Digite o quinto número: ";
+$quinto = fgets(STDIN);
+if ($primeiro == $segundo or $primeiro == $terceiro or $primeiro == $quarto or $primeiro == $quinto or $segundo == $terceiro or $segundo == $quarto or $segundo == $quinto or $terceiro == $quarto or $terceiro == $quinto or $quarto == $quinto) {
+    print "Eu disse para não repetir números. \n";
+    exit;
+}
+if ($primeiro > $segundo and $primeiro > $terceiro and $primeiro > $quarto and $primeiro > $quinto) {
+    print "O primeiro número é o maior. \n";
+}elseif ($segundo > $primeiro and $segundo > $terceiro and $segundo > $quarto and $segundo > $quinto) {
+    print "O segundo número é o maior. \n";
+}elseif ($terceiro > $primeiro and $terceiro > $segundo and $terceiro > $quarto and $terceiro > $quinto) {
+    print "O terceiro número é o maior. \n";
+}elseif ($quarto > $primeiro and $quarto > $segundo and $quarto > $terceiro and $quarto > $quinto) {
+    print "O quarto número é o maior. \n";
+}elseif ($quinto > $primeiro and $quinto > $segundo and $quinto > $terceiro and $quinto > $quarto) {
+    print "O quinto número é o maior. \n";
+}
+
+//Exercicio 16
+
+print "Digite o primeiro número: ";
+$primeiro = fgets(STDIN);
+print "Digite o segundo número: ";
+$segundo = fgets(STDIN);
+print "Digite o terceiro número: ";
+$terceiro = fgets(STDIN);
+print "Digite o quarto número: ";
+$quarto = fgets(STDIN);
+print "Digite o quinto número: ";
+$quinto = fgets(STDIN);
+ $Soma = $primeiro + $segundo + $terceiro + $quarto + $quinto;
+ $Media = $Soma/5;
+print "A soma dos números é: $Soma \n";
+print "A média dos números é: $Media \n";
+
+//Exercicio 17
+
+print "Digite a base: ";
+$Base = fgets(STDIN);
+print "Digite o expoente: ";
+$Expoente = fgets(STDIN);
+    $Potencia = $Base**$Expoente;
+print "A potência resultante é: $Potencia \n";
+
+//Exercicio 18
+
+$par = 0;
+$impar = 0;
+print "Digite um número: ";
+$numero1 = (float)fgets(STDIN);
+print "Digite um número novamente: ";
+$numero2 = (float)fgets(STDIN);
+print "Digite um número novamente: ";
+$numero3 = (float)fgets(STDIN);
+print "Digite um número novamente: ";
+$numero4 = (float)fgets(STDIN);
+print "Digite um número novamente: ";
+$numero5 = (float)fgets(STDIN);
+print "Digite um número novamente: ";
+$numero6 = (float)fgets(STDIN);
+print "Digite um número novamente: ";
+$numero7 = (float)fgets(STDIN);
+print "Digite um número novamente: ";
+$numero8 = (float)fgets(STDIN);
+print "Digite um número novamente: ";
+$numero9 = (float)fgets(STDIN);
+print "Digite um número novamente: ";
+$numero10 = (float)fgets(STDIN);
+if ($numero1%2==0) {
+    $par++;
+}
+if($numero1%2==1) {
+    
+    $impar++;
+}
+if ($numero2%2==0) {
+    $par++;
+}
+if($numero2%2==1) {
+    $impar++;
+}
+if ($numero3%2==0) {
+    $par++;
+}
+if($numero3%2==1) {
+    $impar++;
+}
+if ($numero4%2==0) {
+    $par++;
+}
+if($numero4%2==1) {
+    $impar++;
+}
+if ($numero5%2==0) {
+    $par++;
+}
+if($numero5%2==1) {
+    $impar++;
+}
+if ($numero6%2==0) {
+    $par++;
+}
+if($numero6%2==1) {
+    $impar++;
+}
+if ($numero7%2==0) {
+    $par++;
+}for ($o = 0; $o < 8; $o++) {
+412
+    for ($u = 8; $u > $o; $u--){
+413
+        print "* ";
+414
+    }
+415
+    print "\n";
+416
+}
+417
+print "\n";
+418
+for ($a = 0; $a < 8; $a++) { 
+419
+    print "* * * * * * * * \n";
+420
+}
+421
+print "\n";
+422
+for ($e = 0; $e < 8; $e++) {
+423
+    for ($i = -1; $i < $e; $i++) {
+424
+       print "* ";
+425
+    }
+426
+    print "\n";
+427
+}
+428
+//////////////////////////////////////////////////
+429
+print "\n";
+430
+for ($e = 0; $e < 8; $e++) {
+431
+  
+432
+  for ($k=1; $k < 8 - $e; $k++) { 
+433
+    print("  ");
+434
+  }
+435
+    for ($i = -1; $i < $e; $i++) {
+436
+       print "* ";
+437
+    }
+438
+    print "\n";
+439
+}
+440
+​
+441
+
+if($numero7%2==1) {
+    $impar++;
+}
+if ($numero8%2==0) {
+    $par++;
+}
+if($numero8%2==1) {
+    $impar++;
+}
+if ($numero9%2==0) {
+    $par++;
+}
+if($numero9%2==1) {
+    $impar++;
+}
+if ($numero10%2==0) {
+    $par++;
+}
+if($numero10%2==1) {
+    $impar++;
+}
+print "Há $par número(s) par(es) \n";
+print "Há $impar número(s) impar(es) \n";
+
+//Exercicio 19 
+
+    $Fibonacci1 = 0;
+    $Fibonacci2 = 1;
+while ($Fibonacci1 < 500 or $Fibonacci2 < 500) {
+    print "$Fibonacci1 ";
+    print "$Fibonacci2 ";
+        $Fibonacci1 = $Fibonacci1+$Fibonacci2;
+        $Fibonacci2 = $Fibonacci2+$Fibonacci1;
+}
+
+//Exercicio 20
+
+for ($o = 0; $o < 8; $o++) {
+    for ($u = 8; $u > $o; $u--){
+        print "* ";
+    }
+    print "\n";
+}
+print "\n";
+for ($a = 0; $a < 8; $a++) { 
+    print "* * * * * * * * \n";
+}
+print "\n";
+for ($e = 0; $e < 8; $e++) {
+    for ($i = -1; $i < $e; $i++) {
+       print "* ";
+    }
+    print "\n";
+}
+//////////////////////////////////////////////////
+print "\n";
+for ($e = 0; $e < 8; $e++) {
+	
+	for ($k=1; $k < 8 - $e; $k++) { 
+		print("  ");
+	}
+    for ($i = -1; $i < $e; $i++) {
+       print "* ";
+    }
+    print "\n";
+}
+
+php?>
+
+
+
+
+
